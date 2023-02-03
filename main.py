@@ -11,12 +11,13 @@ titre_h1 = body.find("h1")
 
 class_description = body.find("p", class_="description")
 
-img_gateau = body.find("img")
+div_info = body.find("div", class_="info")
+img = div_info = body.find("img")
    
 
 
 print("Le titre de la page : ", titre_h1.text)
 print("La description de la page : ", class_description.text)
-print("La photo de la page : ", [img_gateau])
+print("Le nom de l'image est  : ", img["src"])
 
 print()
